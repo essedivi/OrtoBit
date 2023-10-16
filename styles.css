@@ -1,0 +1,221 @@
+/* Stile per dispositivi desktop (larghezza minima 768px) */
+@media (min-width: 768px) {
+    /* Le regole CSS esistenti per i dispositivi desktop vanno qui */
+body {
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #223529; /* Colore di sfondo verde scuro */
+    color: #c2f5a7; /* Testo verde chiaro */
+}
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #c2f5a7; /* Colore verde chiaro per l'header */
+}
+
+header h1 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    color: #223529; /* Testo verde scuro */
+}
+
+#game-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#game {
+    background-color: rgba(255, 255, 255, 0.2); /* Sfondo bianco con trasparenza */
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: left; /* Allineamento a sinistra per il contenuto del gioco */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ombra leggera */
+}
+
+.choice {
+    cursor: pointer;
+    margin: 10px;
+    background-color: #c65858; /* Colore pietra beige per le scelte */
+    padding: 5px 10px;
+    border-radius: 80px;
+    transition: background-color 0.3s;
+    color: #223529; /* Testo verde scuro */
+    font-size: 18px;
+}
+
+.choice:hover {
+    background-color: #7f3636; /* Tono più scuro al passaggio del mouse */
+}
+
+#riepilogo {
+    margin-top: 20px;
+    text-align: left;
+    padding: 20px;
+    background-color: #c2f5a7; /* Colore verde chiaro per il riepilogo */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ombra leggera */
+    color: #223529; /* Testo verde scuro */
+    font-size: 16px;
+}
+
+#collezione {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+    background-color: #b48a76; /* Colore beige scuro per la griglia */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.collezione-square {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #c2f5a7; /* Colore verde chiaro con texture */
+    border: 2px solid #223529; /* Bordo verde scuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #223529; /* Testo verde scuro */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Ombra testo */
+}
+
+aside {
+    width: 25%;
+    padding: 5px;
+    background-color: #c2f5a7; /* Colore verde chiaro per la barra laterale */
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5); /* Ombra leggera a sinistra */
+}
+
+h2 {
+    font-size: 24px;
+    color: #ff6f61; /* Rosso */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #c2f5a700; /* Colore verde chiaro per il piè di pagina */
+    padding: 10px;
+    text-align: center;
+    color: #223529; /* Testo verde scuro */
+}
+
+#curiosita {
+    font-style: italic;
+    color: #ff6f61; /* Rosso */
+}
+#visitatori {
+  position: absolute;
+  bottom: 60px; /* Aggiungi spazio tra i pulsanti se necessario */
+  right: 10px;
+}
+
+/* Stile per il testo delle istruzioni */
+#instructions {
+    text-align: center;
+    color: #c2f5a7; /* Testo verde chiaro */
+    font-size: 18px;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+
+  
+  /* Stile per dispositivi mobili (larghezza massima 767px) */
+  @media (max-width: 844px) {
+    body {
+      background-image: none; /* Rimuovi l'immagine di sfondo */
+      background-color: #ffffff; /* Sfondo bianco per dispositivi mobili */
+      color: #223529; /* Testo verde scuro su sfondo bianco */
+      font-family: "Press Start 2P", cursive;
+    }
+  
+    header {
+      padding: 10%, 10%; /* Riduci il padding dell'header */
+    }
+  
+    header h1 {
+      font-size: 20px; /* Riduci la dimensione del titolo */
+    }
+  
+    #game {
+      width: 100%; /* Utilizza l'intera larghezza del dispositivo */
+    }
+  
+    .choice {
+      margin: 2px; /* Riduci il margine delle scelte */
+      padding: 1px px; /* Riduci il padding delle scelte */
+      font-size: 10px; /* Riduci la dimensione del testo delle scelte */
+    }
+  
+    #riepilogo {
+      margin-top: 5px; /* Riduci il margine del riepilogo */
+      padding: 10px; /* Riduci il padding del riepilogo */
+      font-size: 14px; /* Riduci la dimensione del testo del riepilogo */
+    }
+  
+    #collezione {
+      margin-top: 5px; /* Riduci il margine della griglia di collezione */
+      padding: 5px; /* Riduci il padding della griglia di collezione */
+    }
+  
+    .collezione-square {
+      width: 20px; /* Riduci le dimensioni dei quadrati di collezione */
+      height: 20px;
+      margin: 2px; /* Riduci il margine tra i quadrati di collezione */
+      font-size: 100%; /* Riduci la dimensione del testo dei quadrati di collezione */
+    }
+  
+    aside {
+      width: 100%; /* Utilizza l'intera larghezza del dispositivo */
+      padding: 5px; /* Riduci il padding della barra laterale */
+    }
+  
+    h2 {
+      font-size: 12px; /* Riduci la dimensione dei titoli */
+    }
+  
+    ul li {
+      font-size: 50%; /* Riduci la dimensione del testo delle liste */
+    }
+  
+    #curiosita {
+      font-size: 14px; /* Riduci la dimensione del testo delle curiosità */
+    }
+    
+  
+    }
+      #manutenzione {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+    #visitatori {
+        position: absolute;
+        bottom: 60px; /* Aggiungi spazio tra i pulsanti se necessario */
+        right: 10px;
+      }
+  
+  

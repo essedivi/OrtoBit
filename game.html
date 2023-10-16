@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrtoBit 🌱</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Collegamento al file CSS -->
+</head>
+<body>
+  <header>
+    <h1>OrtoBit 🌱</h1>
+    <button id="toggleMusic">🎵</button>
+
+  </header>
+  <div id="game-container">
+    <div id="game">
+      <p>Raccogli risorse dalle piante nel tuo giardino!</p>
+
+      <div id="riepilogo">
+        <p>Settimana: 0</p>
+        <p>Money ($): 50</p>
+        <p>Hortus Point (HP): 50</p>
+        <p>Ecosystem Point (EP): 0</p>
+      </div>
+      <div id="collezione"></div>
+      <div id="curiosita"></div>
+    </div>
+    <aside>
+      <h2>Vivaio</h2>
+      <ul>
+        <li><a href="#" id="piantaMargherita">🌼 Margherita 5$</a></li>
+        <li><a href="#" id="piantaRosa">🌹 Rosa 10$</a></li>
+        <li><a href="#" id="piantaTulipano">🌷 Tulipano 15$</a></li>
+        <li><a href="#" id="piantaGirasole">🌻 Girasole 5$</a></li>
+        <li><a href="#" id="piantaOrchidea">🌸 Orchidea 30$</a></li>
+        <li><a href="#" id="piantaIris">🌺 Iris 15$</a></li>
+        <li><a href="#" id="piantaGiglio">🌼 Giglio 25$</a></li>
+        <li><a href="#" id="piantaPeonia">🌷 Peonia 50$</a></li>
+        <li><a href="#" id="piantaLavanda">🌱 Lavanda 10$</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="choice" id="manutenzione">
+      <p>🔧 Manutenzione</p>
+    </div>
+    <div class="choice" id="visitatori">
+      <p>👥 Visitatori</p>
+    </div>
+  </footer>
+  <!-- Aggiungi questi pulsanti nel tuo file HTML -->
+
+
+  <audio id="backgroundMusic" loop>
+    <source src="backgroundmusic.mp3" type="audio/mpeg">
+    Il tuo browser non supporta l'elemento audio.
+  </audio>
+  <p hidden> <button id="playButton">Play</button>
+  <button id="pauseButton">Pause</button></p>
+  
+  <script src="script.js"></script> <!-- Collegamento al file JavaScript -->
+</body>
+
+</html>
